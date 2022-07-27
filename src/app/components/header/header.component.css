@@ -1,0 +1,7 @@
+.banner{
+    background-image: var(--colorBtn);
+    border-radius: 10px;
+    margin: 20px;
+    height: 75vh;
+    color: #dde1e4;
+}
