@@ -1,6 +1,10 @@
 <section id="Educacion" class="container">
     <h2 class="row">Educacion</h2>
-    <app-education-item *ngFor="let item of edItem"
-    [title]="item.institude"
+    <app-education-item 
+    *ngFor="let item of edItem"
+    [nombreInst]="item.institude"
+    [descripcionInst]="item.description"
+    [period]="item.period"
+    [finished]="item.finished"
     ></app-education-item>
 </section>
