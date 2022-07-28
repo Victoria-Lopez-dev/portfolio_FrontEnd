@@ -1,7 +1,10 @@
 .banner{
-    background-image: var(--colorBtn);
+    background: url(../../../assets/imagenes/bannerImg.png) ;
+    background-size: cover;
     border-radius: 10px;
+    padding-left: 20%;
     margin: 20px;
-    height: 75vh;
+    min-height: 85vh;
+    height: 85vh;
     color: #dde1e4;
 }
