@@ -13,6 +13,8 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ProyectItemComponent } from './components/proyect-item/proyect-item.component';
 import { EducationItemComponent } from './components/education-item/education-item.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SkillItemComponent } from './components/skill-item/skill-item.component
     ProyectsComponent,
     ProyectItemComponent,
     EducationItemComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    LogInComponent,
   ],
   imports: [
     BrowserModule,
