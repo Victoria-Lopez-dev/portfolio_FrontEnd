@@ -86,31 +86,11 @@ h2{
         transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(144deg);
+        -webkit-transform: rotate(120deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-3{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-}
 
-@keyframes loading-4{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(36deg);
-        transform: rotate(36deg);
-    }
-}
 
 .progress.color-bar .progress-bar{
     border-color: #26abfd;
@@ -119,9 +99,3 @@ h2{
     animation: loading-2 1.5s linear forwards 1.8s;
 }
 
-.progress.yellow .progress-left .progress-bar{
-    animation: loading-3 1s linear forwards 1.8s;
-}
-
-.progress.pink .progress-left .progress-bar{
-    animation: loading-4 0.4s linear forwards 1.8s;}

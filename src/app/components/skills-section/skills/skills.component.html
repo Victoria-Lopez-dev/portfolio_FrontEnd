@@ -3,7 +3,7 @@
     <div class="row " >
         <app-skill-item
             class="col-lg-3 col-sm-6 mar d-flex pb flex-wrap grafic"
-            *ngFor="let skill of skills"
+            *ngFor="let skill of dataService.skills"
             [skill]="skill"
         ></app-skill-item>
     </div>

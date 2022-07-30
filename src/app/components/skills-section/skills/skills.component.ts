@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,37 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills=[
-  {
-    name:"HTML",
-    porcentageSkill:'80%'
-  },{
-    name:"CSS",
-    porcentageSkill:'80%'
-  },
-  {
-    name:"HTML",
-    porcentageSkill:'80%'
-  },{
-    name:"CSS",
-    porcentageSkill:'80%'
-  },
-  {
-    name:"HTML",
-    porcentageSkill:'80%'
-  },{
-    name:"CSS",
-    porcentageSkill:'80%'
-  },
-  {
-    name:"HTML",
-    porcentageSkill:'80%'
-  },{
-    name:"CSS",
-    porcentageSkill:'80%'
-  }
-  ]
-  constructor() { }
+
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

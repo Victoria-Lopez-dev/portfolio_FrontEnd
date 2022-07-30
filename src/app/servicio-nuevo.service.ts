@@ -88,7 +88,7 @@ export class ServicioNuevoService {
   ]
 
 
-//info seccion experiencia
+// --------- info seccion experiencia  ---------
 
 edItem=[
   {
@@ -148,6 +148,61 @@ edItem=[
     finished:"Finalizado"
   }
 ]
+
+
+// --------- info seccion skills  ---------
+
+skills=[
+  {
+    name:"HTML5",
+    porcentageSkill:'90%'
+  },{
+    name:"CSS3",
+    porcentageSkill:'90%'
+  },
+  {
+    name:"JavaScript",
+    porcentageSkill:'90%'
+  },{
+    name:"Sass",
+    porcentageSkill:'70%'
+  },
+  {
+    name:"Bootstrap",
+    porcentageSkill:'70%'
+  },
+  {
+    name:"Material Desing",
+    porcentageSkill:'50%'
+  },
+  {
+    name:"Git",
+    porcentageSkill:'70%'
+  },{
+    name:"NodeJs",
+    porcentageSkill:'60%'
+  },
+  {
+    name:"Express",
+    porcentageSkill:'60%'
+  },{
+    name:"MySQL",
+    porcentageSkill:'70%'
+  },
+  {
+    name:"MongoDB",
+    porcentageSkill:'50%'
+  },
+  {
+    name:"Angular",
+    porcentageSkill:'50%'
+  },
+  {
+    name:"React",
+    porcentageSkill:'40%'
+  }
+
+  ]
   
 }
 
