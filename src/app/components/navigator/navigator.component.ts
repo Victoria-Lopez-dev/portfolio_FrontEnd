@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ServicioNuevoService } from'../../servicio-nuevo.service';
 
 
 @Component({
@@ -10,11 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class NavigatorComponent implements OnInit {
 
   modelOpen:boolean=false
-  constructor( ) { }
+  constructor( private dataService:ServicioNuevoService ) { }
 
   ngOnInit(): void {
   }
-  logIn(){
-    console.log("abrir form de log in")
+  EditionOpen(){
+    if(this.modelOpen == false){
+      this.modelOpen=true
+      this.dataService.edit = true
+    }else{
+      this.modelOpen=false
+      this.dataService.edit = false
+    }
   }
+
 }

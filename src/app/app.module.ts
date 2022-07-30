@@ -16,6 +16,7 @@ import { SkillItemComponent } from './components/skills-section/skill-item/skill
 import { ExperienceItemComponent } from './components/experience-section/experience-item/experience-item.component';
 import { BotonEditionComponent } from './components/boton-edition/boton-edition.component';
 import { BotonOnliEditComponent } from './components/boton-onli-edit/boton-onli-edit.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { BotonOnliEditComponent } from './components/boton-onli-edit/boton-onli-
     ExperienceItemComponent,
     BotonEditionComponent,
     BotonOnliEditComponent,
+    LogInComponent,
   
   ],
   imports: [

@@ -1,5 +1,5 @@
 import { Component, OnInit,Input} from '@angular/core';
-
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 @Component({
   selector: 'app-proyect-item',
   templateUrl: './proyect-item.component.html',
@@ -7,13 +7,13 @@ import { Component, OnInit,Input} from '@angular/core';
 })
 export class ProyectItemComponent implements OnInit {
  @Input() proyect={
-    nameProyect:"ajshdkj",
-    createDate:'22/22/22',
-    descriptionProyect:"sdfhskjdhfkshdfjhskfhskdhf",
-    linkProyect:"ddd.com"
+    nameProyect:"",
+    createDate:'',
+    descriptionProyect:"",
+    linkProyect:"",
+    linkUrl:""
  }
- edit:boolean =false;
-  constructor() { }
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

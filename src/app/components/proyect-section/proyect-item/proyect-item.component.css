@@ -1,0 +1,19 @@
+.row{
+    padding-bottom: 50px;
+}
+
+.btn{
+    border-color: #324587;
+    box-shadow: 2px 3px #154454;
+    background-color:#2e5f8e;
+    color: #dde1e4;
+    height: fit-content;
+    width: 130px;
+}
+
+.btn:hover{
+    background-color:#09203f;
+    color: #31B9C5;
+    box-shadow:0px 0px;
+    transform: translate(3px, 2px);
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 @Component({
   selector: 'app-skill-item',
   templateUrl: './skill-item.component.html',
@@ -11,8 +11,8 @@ export class SkillItemComponent implements OnInit {
     name:"",
     porcentageSkill:""
   }
-  edit:boolean =false;
-  constructor() { }
+
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

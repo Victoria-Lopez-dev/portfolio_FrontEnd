@@ -1,7 +1,7 @@
 <section id="Proyectos" class="container">
     <h2 class="row">Proyectos</h2>
    <app-proyect-item
-    *ngFor="let proy of proyects"
+    *ngFor="let proy of dataService.proyects"
     [proyect]="proy"
    ></app-proyect-item>
 

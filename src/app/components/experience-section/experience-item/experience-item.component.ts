@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 @Component({
   selector: 'app-experience-item',
   templateUrl: './experience-item.component.html',
@@ -9,12 +9,13 @@ export class ExperienceItemComponent implements OnInit {
 
   @Input() experience=
   {
-    period:"",
-    job:"",
-    description:""
+    period:"1",
+    job:"1",
+    place:"1",
+    description:"1"
   }
-  edit:boolean=false;
-  constructor() { }
+
+  constructor(public dataService:ServicioNuevoService) { }
   
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -7,24 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }
-
-  experiences=[{
-    period:"22/22/22",
-    job:"Puesto",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?"
-  },
-  {
-    period:"22/22/22",
-    job:"Puesto",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?"
-  },
-  {
-    period:"22/22/22",
-    job:"Puesto",
-    description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?"
-  }]
 }

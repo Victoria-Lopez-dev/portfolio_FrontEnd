@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 
 @Component({
   selector: 'app-education',
@@ -6,33 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
-  hola:string="HOLA";
-  edItem=[
-    {
-      institude:"BLABLABLABALA",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?",
-      period:"20/20/20",
-      finished:"Finalizado"    
-    },
-    {
-      institude:"UYRIUYFDIUSHJKDF",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?",
-      period:"00/00/00",
-      finished:"Finalizado"
-    },
-    {
-      institude:"UYRIUYFDIUSHJKDF",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, et?",
-      period:"00/00/00",
-      finished:"Finalizado"
-    }
-  ]
+
+  constructor(public dataService:ServicioNuevoService) { }
+  
 
   bla(){
     console.log("toggleAddTask!");
     
   }
-  constructor() { }
 
   ngOnInit(): void {
   }

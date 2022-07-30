@@ -1,3 +1,23 @@
 .btn-primary{
     width: 100px;
 }
+.row{
+    padding-bottom: 50px;
+}
+h3{
+    font-size: 25px;
+}
+.done{
+    border:2px solid #324587;
+    box-shadow: 2px 3px 10px #154454;
+    text-align: center;
+}
+
+.period{
+    background-color: rgba(73, 138, 199,0.5);
+    padding: 10px;
+    text-align: center;
+}
+.fontSecondary{
+    font-size: 20px;
+}

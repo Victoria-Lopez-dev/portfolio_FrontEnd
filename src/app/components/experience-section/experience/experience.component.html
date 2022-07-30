@@ -1,7 +1,7 @@
 <section id="Experiencia" class="container">
     <h2 class="row">Experiencia</h2>
   <app-experience-item
-  *ngFor="let experience of experiences"
+  *ngFor="let experience of dataService.experiences"
   [experience]="experience"
   ></app-experience-item>
 

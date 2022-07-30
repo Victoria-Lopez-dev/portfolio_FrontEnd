@@ -8,7 +8,7 @@
             </span>
             <div class="progress-value position-absolute w-100 h-100">{{skill.name}}</div>
         </div>   
-        <div *ngIf="edit;then changeButton "></div>
+        <div *ngIf="dataService.edit;then changeButton "></div>
 
         <ng-template #changeButton>
             <app-boton-edition></app-boton-edition>

@@ -27,12 +27,15 @@
             <div class="d-flex flex-lg-row flex-column">
                 <a class="btn btn-outline-success me-1"><img src="./assets/imagenes/linkedin.svg" alt="icono linkedin" /></a>
                 <a class="btn btn-outline-success me-1"><img src="./assets/imagenes/twitter.svg" alt="icono twitter" /></a>
-                <button class="btn btn-success" (click)="modelOpen=true">Login</button>  
+                <button class="btn btn-success" (click)="EditionOpen()" >Login</button>  
+
+                
             </div>
         </div>
 
     </div>
-     
+   
+    
+
 </nav>
-<div *ngIf=" modelOpen;then modalLogIng"></div>
-    <ng-template #modalLogIng>gola</ng-template>
+

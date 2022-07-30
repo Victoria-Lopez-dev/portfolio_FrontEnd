@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-
+import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 @Component({
   selector: 'app-education-item',
   templateUrl: './education-item.component.html',
@@ -7,15 +7,13 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class EducationItemComponent implements OnInit {
   @Input() edHist =    {
-    institude:" ",
+    title:" ",
+    place:"",
     description:"",
     period:"",
     finished:""    
   };
-
-  edit:boolean =false
-
-  constructor() { }
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

@@ -6,5 +6,8 @@
     margin: 20px;
     min-height: 85vh;
     height: 85vh;
-    color: #dde1e4;
+    color: #dde1e4 ;
+}
+h1{
+    font-family: 'Poppins', sans-serif;    
 }

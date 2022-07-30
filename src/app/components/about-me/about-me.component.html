@@ -1,11 +1,11 @@
 
 <section class="container d-flex flex-columnjustify-content-between ">
     
-    <div class="row">
-        <div class="col w-50 d-flex flex-column align-items-center m-3 position-relative justify-conten-center" >
-            <img class="img-fluid perfil rounded " src="./assets/imagenes/perfil.21.jpg" alt="foto perfil">   
+    <div class="row d-flex  align-items-center">
+        <div class="col d-flex flex-column align-items-center m-3 position-relative justify-conten-center" >
+            <img class="img-fluid rounded w-50" src="./assets/imagenes/perfil.21.jpg" alt="foto perfil">   
            
-            <div *ngIf="edit;then changeButtonEdit "></div>
+            <div *ngIf="dataService.edit;then changeButtonEdit "></div>
         </div>   
         <div class="col w-50">        
             <h2>Acerca de mi ..</h2>
@@ -13,7 +13,7 @@
         </div>     
 
     </div>
-      <div *ngIf="edit;then changeButton"></div>
+      <div *ngIf="dataService.edit;then changeButton"></div>
 
 </section>
     <ng-template #changeButton >
