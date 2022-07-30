@@ -1,0 +1,13 @@
+<div class="row">
+    <p class="col">{{experience.period}}</p>
+    <div class="col">
+        <h3>{{experience.job}}</h3>
+        <p>{{experience.description}}</p>                
+    </div>
+    <div *ngIf="edit;then changeButton "></div>
+
+    <ng-template #changeButton >
+        <app-boton-edition class="col"></app-boton-edition>
+    </ng-template>
+
+</div>

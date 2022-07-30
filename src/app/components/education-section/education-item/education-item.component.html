@@ -1,0 +1,15 @@
+<div class="row">
+    <p class="col">{{edHist.period}}</p>
+    <div class="col">
+        <h3>{{edHist.institude}}</h3>
+        <p>{{edHist.description}}</p>            
+    </div>
+    <p  class="col">{{edHist.finished}}</p>
+
+    <div *ngIf="edit;then changeButton "></div>
+
+    <ng-template #changeButton >
+       <app-boton-edition class="col"></app-boton-edition>
+    </ng-template>
+  
+</div>

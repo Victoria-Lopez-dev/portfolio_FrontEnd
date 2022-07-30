@@ -13,7 +13,7 @@ export class AboutMeComponent implements OnInit {
 
   info:string="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis distinctio voluptas dolorum nobis doloribus asperiores laudantium inventore animi, quis placeat minus assumenda odit, nostrum ducimus culpa delectus optio cum aut.";
   
-
+  edit:boolean =true
 
   
 }

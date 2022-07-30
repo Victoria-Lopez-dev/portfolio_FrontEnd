@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DataManageService} from '../../data-manage.service'
+
 
 
 @Component({
@@ -10,11 +10,11 @@ import {DataManageService} from '../../data-manage.service'
 export class NavigatorComponent implements OnInit {
 
   modelOpen:boolean=false
-  constructor( public dataManageService :DataManageService) { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }
   logIn(){
-    this.dataManageService.logIn("hola","chau")
+    console.log("abrir form de log in")
   }
 }

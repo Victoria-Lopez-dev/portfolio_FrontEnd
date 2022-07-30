@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col">
+        <h3 >{{proyect.nameProyect}}</h3>
+        <p >{{proyect.createDate}}</p>        
+    </div>
+    <p class="col">{{proyect.descriptionProyect}}</p>
+    <a class="col" href=""> {{proyect.linkProyect}}</a>
+
+    <div *ngIf="edit;then changeButton "></div>
+
+    <ng-template #changeButton >
+        <app-boton-edition class="col"></app-boton-edition>
+    </ng-template>
+</div>

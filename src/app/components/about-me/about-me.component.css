@@ -1,3 +1,6 @@
 .perfil{
-    width: 30%;
+    width: 200px;
+}
+.position-absolute{
+    left:70%
 }
