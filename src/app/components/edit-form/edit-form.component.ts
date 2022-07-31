@@ -6,14 +6,19 @@ import { ServicioNuevoService } from'../../servicio-nuevo.service';
   templateUrl: './edit-form.component.html',
   styleUrls: ['./edit-form.component.css']
 })
-export class EditFormComponent implements OnInit {
 
+export class EditFormComponent implements OnInit {
+  item:any={
+    nameItem:"",
+    itemPeriod:""
+  };
+    data =this.dataService.area
   constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }
   closeModal(){
-    this.dataService.EditButton=false
+    this.dataService.EditButton=false    
   }
 
 }

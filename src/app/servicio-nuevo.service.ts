@@ -5,9 +5,26 @@ import { Injectable } from '@angular/core';
 })
 export class ServicioNuevoService {
   constructor() { }
-  edit:boolean =false;
+  edit:boolean =true;
   openModal:boolean=false;
   EditButton:boolean =false;
+
+  area=[
+      {
+      nameItem:"periodo",
+      itemContent:"22/22/22"
+      },
+      {
+        nameItem:"periodo",
+        itemContent:"22/22/22"
+        },
+        {
+          nameItem:"periodo",
+          itemContent:"22/22/22"
+          }
+    ]
+  
+
 // info seccion experiencias
 
   experiences=[

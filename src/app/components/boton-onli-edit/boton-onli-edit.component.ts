@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioNuevoService } from'../../servicio-nuevo.service';
 
 @Component({
   selector: 'app-boton-onli-edit',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BotonOnliEditComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

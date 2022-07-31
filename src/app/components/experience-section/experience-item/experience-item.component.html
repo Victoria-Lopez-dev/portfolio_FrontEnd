@@ -11,7 +11,10 @@
     <div *ngIf="dataService.edit;then changeButton "></div>
 
     <ng-template #changeButton >
-        <app-boton-edition class="col"></app-boton-edition>
+        <app-boton-edition 
+        class="col"
+        [info]="experience"
+        ></app-boton-edition>
     </ng-template>
 
 </div>
