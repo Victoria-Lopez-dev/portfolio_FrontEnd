@@ -17,6 +17,7 @@ import { ExperienceItemComponent } from './components/experience-section/experie
 import { BotonEditionComponent } from './components/boton-edition/boton-edition.component';
 import { BotonOnliEditComponent } from './components/boton-onli-edit/boton-onli-edit.component';
 import { LogInComponent } from './components/log-in/log-in.component';
+import { EditFormComponent } from './components/edit-form/edit-form.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { LogInComponent } from './components/log-in/log-in.component';
     BotonEditionComponent,
     BotonOnliEditComponent,
     LogInComponent,
+    EditFormComponent,
   
   ],
   imports: [

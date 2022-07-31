@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ServicioNuevoService } from'../../servicio-nuevo.service';
 @Component({
   selector: 'app-boton-edition',
   templateUrl: './boton-edition.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BotonEditionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {
   }

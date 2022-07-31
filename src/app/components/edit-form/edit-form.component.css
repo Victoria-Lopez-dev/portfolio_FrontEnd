@@ -1,22 +1,20 @@
-.modal{
-    background-color: #111111bd;
-    opacity: 1;  
+.popUpEdit{
     animation: appear 3s;
 }
 
 @keyframes appear {
     0%{
         pointer-events: none;
-        transform: translateY(-100vh);
+        transform: translateX(-100vh);
     }
     100%{
         pointer-events: unset;
-        transform: translateY(0);;
+        transform: translateX(0);;
 
     }
 }
 
-.modal__container{
+.popUp_container{
     margin: auto;
     width: 90%;
     max-width: 600px;
@@ -34,24 +32,18 @@
 
 
 
-.modal__title{
+.popUp__title{
     font-size: 2.5rem;
 }
 
-.modal__paragraph{
-    margin-bottom: 10px;
-}
 
-.btn-success{
+.btn{
     border-color: #324587;
     background-color:#2e5f8e;
     color: #dde1e4;
     box-shadow: 2px 3px #154454;
-}
-
-.btn{
-    border-color: #324587;
-    box-shadow: 2px 3px #154454;
+    width: fit-content;
+    
 }
 
 .btn:hover{

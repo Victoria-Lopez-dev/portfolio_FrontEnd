@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 export class ServicioNuevoService {
   constructor() { }
   edit:boolean =false;
-
+  openModal:boolean=false;
+  EditButton:boolean =false;
 // info seccion experiencias
 
   experiences=[

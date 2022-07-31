@@ -1,0 +1,18 @@
+<section class="container popUpEdit position-fixed top-0 bottom-0 end-0 start-0 d-flex">
+    <div class="row popUp_container">
+        <h2 class="popUp__title">Edit Form Component</h2>
+        <form class="d-flex gap-3 flex-column align-items-end ">
+            <div class="form-floating mb-3  w-100">
+              <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Campo a Editar</label>
+            </div>
+            <div class="form-floating  w-100">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Campo a Editar</label>
+            </div>
+
+            <button href="#" class="btn p-1s" (click)="closeModal()">Aceptar</button>  
+        </form>
+
+    </div>
+</section>

@@ -9,19 +9,21 @@ import { ServicioNuevoService } from'../../servicio-nuevo.service';
 })
 export class NavigatorComponent implements OnInit {
 
-  modelOpen:boolean=false
-  constructor( private dataService:ServicioNuevoService ) { }
+ 
+
+  constructor(public dataService:ServicioNuevoService) { }
+
 
   ngOnInit(): void {
   }
-  EditionOpen(){
-    if(this.modelOpen == false){
-      this.modelOpen=true
-      this.dataService.edit = true
-    }else{
-      this.modelOpen=false
-      this.dataService.edit = false
-    }
+ 
+
+  open() {
+    this.dataService.openModal=true;
+  }
+
+  close(){
+    this.dataService.edit=false;
   }
 
 }

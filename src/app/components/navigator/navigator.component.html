@@ -27,15 +27,21 @@
             <div class="d-flex flex-lg-row flex-column">
                 <a class="btn btn-outline-success me-1"><img src="./assets/imagenes/linkedin.svg" alt="icono linkedin" /></a>
                 <a class="btn btn-outline-success me-1"><img src="./assets/imagenes/twitter.svg" alt="icono twitter" /></a>
-                <button class="btn btn-success" (click)="EditionOpen()" >Login</button>  
+                <div *ngIf="dataService.edit== false ;then logIn else logOut"></div>
 
-                
-            </div>
+            
         </div>
-
+        </div>
     </div>
-   
-    
 
 </nav>
+<div *ngIf="dataService.openModal== true ;then exampleModal">
 
+</div>
+    <ng-template #exampleModal>
+        <app-log-in></app-log-in>    
+    </ng-template>   
+
+                <ng-template #logIn> <button class="btn btn-success" (click)="open()" >Login</button></ng-template> 
+
+               <ng-template #logOut><button class="btn btn-success" (click)="close()" >LogOut</button></ng-template> 
