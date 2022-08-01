@@ -1,4 +1,6 @@
-
+.item-skill{
+    z-index: 0;
+}
 /* barra de progreso */
 .progress{
     background: none;
