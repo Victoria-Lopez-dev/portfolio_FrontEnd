@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormBuilder} from '@angular/forms';
+
 import { ServicioNuevoService } from'../../servicio-nuevo.service';
 @Component({
   selector: 'app-log-in',
@@ -7,19 +9,31 @@ import { ServicioNuevoService } from'../../servicio-nuevo.service';
 })
 export class LogInComponent implements OnInit {
 
-  constructor(private dataService:ServicioNuevoService) { }
+  tiping:boolean=false
 
+  constructor(private dataService:ServicioNuevoService , private formBuilder:FormBuilder) { }
   ngOnInit(): void {
   }
 
+  form:FormGroup =this.formBuilder.group({
+    password:['',[]],
+    mail:['',[]]
+  })
   closeModal(){
     this.dataService.openModal=false
   }
 
   EditionOpen(){
-    this.dataService.edit = true
+    if(this.tiping == true){
+        this.dataService.edit = true  
+    }
+    
+
     this.dataService.openModal=false
   }
 
+  show(){
+    this.tiping =true
+  }
 }
 

@@ -9,25 +9,31 @@ export class ServicioNuevoService {
   openModal:boolean=false;
   EditButton:boolean =false;
 
+
   itemSelectChange(inf:string){
     if(inf.split('.').pop() == 'e'){
       let objectChar=this.experiences[parseInt(inf.split('.')[0])]
+      
       this.areaEdit=[objectChar.job,objectChar.period ,objectChar.place,objectChar.description]
     }
     if(inf.split('.').pop() == 'p'){
-            let objectChar=this.proyects[parseInt(inf.split('.')[0])]
+      let objectChar=this.proyects[parseInt(inf.split('.')[0])]
+ 
       this.areaEdit=[objectChar.nameProyect,objectChar.createDate ,objectChar.descriptionProyect,objectChar.linkProyect,objectChar.linkUrl]
     }
     if(inf.split('.').pop() == 'ed'){
             let objectChar=this.edItem[parseInt(inf.split('.')[0])]
-      this.areaEdit=[objectChar.description,objectChar.finished ,objectChar.period,objectChar.place,objectChar.title]
+       
+            this.areaEdit=[objectChar.description,objectChar.finished ,objectChar.period,objectChar.place,objectChar.title]
     }
     if(inf.split('.').pop() == 's'){
             let objectChar=this.skills[parseInt(inf.split('.')[0])]
-      this.areaEdit=[objectChar.name,objectChar.porcentageSkill]
+       
+            this.areaEdit=[objectChar.name,objectChar.porcentageSkill]
     }
     if(inf.split('.').pop() == 'about'){
       this.areaEdit=[this.info]
+      
     }
     if(inf.split('.').pop() == 'imagen'){
       this.areaEdit=[this.imagen]
@@ -38,7 +44,7 @@ export class ServicioNuevoService {
     this.EditButton=true
   }
 
-  areaEdit=['']
+  areaEdit=[''];
   
   info:string="Soy Desarrolladora Web Full Stack ,amante de los animales y de la musica. En la actualidad me encuentro siendo parte del cuerpo docente de la facultad UTN asistiendo cursos de desarrollo web. Me concidero una persona dedicada y curiosa, con el objetivo constante de aprender, adquirir nuevos conocimientos y ser parte de experiencias dedicadas al desarrollo web.";
   

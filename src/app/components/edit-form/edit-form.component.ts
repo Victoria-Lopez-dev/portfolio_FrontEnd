@@ -17,7 +17,7 @@ export class EditFormComponent implements OnInit {
   ngOnInit(): void {
   }
   closeModal(){
-    this.dataService.EditButton=false    
+    console.log("close")
   }
 
 }
