@@ -7,8 +7,10 @@ import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 })
 export class ExperienceItemComponent implements OnInit {
 
+  experienceArea:string='experience-section';
   @Input() experience=
   {
+    id:"1",
     period:"1",
     job:"1",
     place:"1",

@@ -2,9 +2,8 @@
     <div class="row popUp_container">
         <h2 class="popUp__title"> Editar contenido</h2>
         <form class="d-flex gap-3 flex-column align-items-end ">
-          <div class="mb-3 w-100" *ngFor="let item of data">
-            <label for="exampleInputEmail1" class="form-label w-100">{{item.nameItem}}</label>
-            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{item.itemContent}}"></textarea>
+          <div class="mb-3 w-100" *ngFor="let items of data">
+            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{items}}"></textarea>
             
           </div>
             <button href="#" class="btn p-1s" (click)="closeModal()">Aceptar</button>  

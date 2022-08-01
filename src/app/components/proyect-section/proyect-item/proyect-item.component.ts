@@ -7,6 +7,7 @@ import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 })
 export class ProyectItemComponent implements OnInit {
  @Input() proyect={
+   id:"",
     nameProyect:"",
     createDate:'',
     descriptionProyect:"",

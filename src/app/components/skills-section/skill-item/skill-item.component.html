@@ -11,7 +11,9 @@
         <div *ngIf="dataService.edit;then changeButton "></div>
 
         <ng-template #changeButton>
-            <app-boton-edition></app-boton-edition>
+            <app-boton-edition
+            [area]="skill.id"
+            ></app-boton-edition>
    </ng-template> 
 </div>   
    

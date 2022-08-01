@@ -3,13 +3,13 @@
     
     <div class="row d-flex  align-items-center">
         <div class="col d-flex flex-column align-items-center m-3 position-relative justify-conten-center" >
-            <img class="img-fluid rounded w-50 " src="./assets/imagenes/perfil.21.jpg" alt="foto perfil">   
+            <img class="img-fluid rounded w-50 " src="{{dataService.imagen}}" alt="foto perfil">   
            
             <div *ngIf="dataService.edit;then changeButtonEdit "></div>
         </div>   
         <div class="col w-50">        
             <h2>Acerca de mi ..</h2>
-            <p>{{info}}</p>            
+            <p>{{dataService.info}}</p>            
         </div>     
 
     </div>
@@ -17,9 +17,15 @@
 
 </section>
     <ng-template #changeButton >
-       <app-boton-edition class="col"></app-boton-edition>
+       <app-boton-edition 
+       class="col"
+       [area]="about"
+       ></app-boton-edition>
     </ng-template>
 
     <ng-template #changeButtonEdit >
-        <app-boton-onli-edit class="col position-absolute" ></app-boton-onli-edit>
+        <app-boton-onli-edit 
+        class="col position-absolute" 
+        [area]="imagen"
+        ></app-boton-onli-edit>
      </ng-template>

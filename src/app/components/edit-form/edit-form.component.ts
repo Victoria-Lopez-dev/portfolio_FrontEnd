@@ -8,11 +8,10 @@ import { ServicioNuevoService } from'../../servicio-nuevo.service';
 })
 
 export class EditFormComponent implements OnInit {
-  item:any={
-    nameItem:"",
-    itemPeriod:""
-  };
-    data =this.dataService.area
+  item:any;
+  
+    data =this.dataService.areaEdit;
+
   constructor(public dataService:ServicioNuevoService) { }
 
   ngOnInit(): void {

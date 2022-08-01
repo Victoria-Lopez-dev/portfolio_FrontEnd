@@ -7,6 +7,7 @@ import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 })
 export class EducationItemComponent implements OnInit {
   @Input() edHist =    {
+    id:"",
     title:" ",
     place:"",
     description:"",

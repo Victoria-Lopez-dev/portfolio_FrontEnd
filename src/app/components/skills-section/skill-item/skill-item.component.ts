@@ -8,6 +8,7 @@ import { ServicioNuevoService } from'../../../servicio-nuevo.service';
 export class SkillItemComponent implements OnInit {
 
   @Input() skill={
+    id:"",
     name:"",
     porcentageSkill:""
   }
