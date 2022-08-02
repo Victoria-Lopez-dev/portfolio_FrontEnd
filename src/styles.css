@@ -2,7 +2,15 @@
 :root{
     --colorBtn: linear-gradient(to top, #09203f 0%, #537895 100%);
     --colorBackground:linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    --colorDarkBlue:#09203f ;
+    --colorMiddleBlue:#2e5f8e;
+    --colorWhite:#dde1e4;
+    --colorLightBlue:#31B9C5;
+    
 }
 body{
     background-image: var(--colorBackground);
+}
+.blue-shadow{
+    box-shadow: 2px 3px #154454;
 }
