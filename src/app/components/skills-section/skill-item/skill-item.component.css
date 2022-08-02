@@ -1,14 +1,83 @@
 .item-skill{
     z-index: 0;
+ }
+p{
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 1;
+    color: #dde1e4;
+    animation: show 10s 5s 2;
+    
 }
+
+.skill{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.outer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow:  6px 6px 10px -1px rgba(9, 32, 62, 0.55),
+                6px 6px 10px -1px rgba(255, 255, 255, 0);
+     overflow: hidden;  
+    position: relative;
+}
+/* .inner{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.55),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.242),
+                -0.5px -0.5px 0px rgba(255,255,255,1);
+} */
+
+
+.gauge__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    height: 240px;
+    background-color: #2e5f8e ;
+    transform-origin: center top;
+    transform: translate(82px,-195px)rotate(45deg);
+    transition: transform 0.2s ease-out;
+    animation: transport 10s 5s 2;  
+  }
+
+@keyframes transport{
+    0%{
+        transform:translate(-83px,-360px)rotate(45deg);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(82px,-195px)rotate(45deg);
+        opacity: 1;
+    }
+}  
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 /* barra de progreso */
-.progress{
+/* .progress{
     background: none;
     margin: 0 auto;
     box-shadow: none;
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     gap: 20px;
 }
 
@@ -42,8 +111,8 @@
 }
 .progress .progress-left .progress-bar{
     left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 130px;
     border-left: 0;
     -webkit-transform-origin: center left;
     transform-origin: center left;
@@ -55,8 +124,8 @@
     left: -100%;
     -webkit-transform-origin: center right;
     transform-origin: center right;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
     border-right: 0;
     animation: loading-1 1.8s linear forwards;
 }
@@ -110,7 +179,7 @@
 }
 
 .progress.color-bar .progress-bar{
-    border-color: #26abfd;
+    border-color: var(--colorMiddleBlue);
 }
 .progress.blue .progress-left .progress-bar{
     animation: loading-2 1.5s linear forwards 1.8s;
@@ -121,4 +190,4 @@
 }
 
 .progress.pink .progress-left .progress-bar{
-    animation: loading-4 0.4s linear forwards 1.8s;}
+    animation: loading-4 0.4s linear forwards 1.8s;} */

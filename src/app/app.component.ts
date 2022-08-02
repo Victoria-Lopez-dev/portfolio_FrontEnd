@@ -8,5 +8,4 @@ import { ServicioNuevoService } from'./servicio-nuevo.service';
 export class AppComponent {
   title = 'porfolio-FrontEnd';
   constructor(public dataService:ServicioNuevoService){}
-
 }

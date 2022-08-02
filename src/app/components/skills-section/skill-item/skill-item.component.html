@@ -1,19 +1,17 @@
-<div class="d-flex item-skill">
-    <div class="progress position-relative blue color-bar">
-            <span class="progress-left position-absolute">
-                <span class="progress-bar position-absolute w-100 h-100"></span>
-            </span>
-            <span class="progress-right position-absolute">
-                <span class="progress-bar position-absolute"></span>
-            </span>
-            <div class="progress-value position-absolute w-100 h-100">{{skill.name}}</div>
-        </div>   
-        <div *ngIf="dataService.edit;then changeButton "></div>
+<div class="d-flex item-skill"> 
+    <div class="skill">
+        <div class="outer d-flex justify-content-center align-items-center">
+            <div class="gauge__fill"></div>
+                <p class="text_skill">{{skill.name}}</p>
+            
+        </div>
+    </div>
+    <div *ngIf="dataService.edit;then changeButton "></div>
 
-        <ng-template #changeButton>
-            <app-boton-edition
-            [area]="skill.id"
-            ></app-boton-edition>
+    <ng-template #changeButton>
+        <app-boton-edition
+        [area]="skill.id"
+        ></app-boton-edition>
    </ng-template> 
 </div>   
    
