@@ -9,8 +9,7 @@ export class SkillItemComponent implements OnInit {
 
   @Input() skill={
     id:"",
-    name:"",
-    porcentageSkill:""
+    name:""
   }
 
   constructor(public dataService:ServicioNuevoService) { }

@@ -29,7 +29,7 @@ export class ServicioNuevoService {
     if(inf.split('.').pop() == 's'){
             let objectChar=this.skills[parseInt(inf.split('.')[0])]
        
-            this.areaEdit=[objectChar.name,objectChar.porcentageSkill]
+            this.areaEdit=[objectChar.name]
     }
     if(inf.split('.').pop() == 'about'){
       this.areaEdit=[this.info]
@@ -76,7 +76,7 @@ export class ServicioNuevoService {
       'id':'2.e',
       period:"08/2021 - 11/2021",
       job:"Participante y Finalista de la Hackaton de Argentina Programa",
-      place:"UTN Regional Bs. As",
+      place:"Hacktaon Arg.Programa",
       description:' Co-creadora de la Propuesta de "Aprendamos a Conectar" ' 
     },
 
@@ -222,64 +222,51 @@ edItem=[
 skills=[
   {
    id:'0.s',
-    name:"HTML5",
-    porcentageSkill:'90%'
+    name:"HTML5"
   },{
    id:'1.s',
-    name:"CSS3",
-    porcentageSkill:'90%'
+    name:"CSS3"
   },
   {
    id:'2.s',
-    name:"JavaScript",
-    porcentageSkill:'90%'
+    name:"JavaScript"
   },{
    id:'3.s',
-    name:"Sass",
-    porcentageSkill:'70%'
+    name:"Sass"
   },
   {
    id:'4.s',
-    name:"Bootstrap",
-    porcentageSkill:'70%'
+    name:"Bootstrap"
   },
   {
    id:'5.s',
-    name:"Material Desing",
-    porcentageSkill:'50%'
+    name:"Material Desing"
   },
   {
    id:'6.s',
-    name:"Git",
-    porcentageSkill:'70%'
+    name:"Git"
   },{
    id:'7.s',
-    name:"NodeJs",
-    porcentageSkill:'60%'
+    name:"NodeJs"
   },
   {
    id:'8.s',
-    name:"Express",
-    porcentageSkill:'60%'
+    name:"Express"
   },{
-   id:'0.s',
-    name:"MySQL",
-    porcentageSkill:'70%'
+   id:'9.s',
+    name:"MySQL"
   },
   {
    id:'10.s',
-    name:"MongoDB",
-    porcentageSkill:'50%'
+    name:"MongoDB"
   },
   {
    id:'11.s',
-    name:"Angular",
-    porcentageSkill:'50%'
+    name:"Angular"
   },
   {
    id:'12.s',
-    name:"React",
-    porcentageSkill:'40%'
+    name:"React"
   }
 
   ]
