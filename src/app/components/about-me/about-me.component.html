@@ -3,8 +3,8 @@
     
     <div class="row d-flex  align-items-center">
         <div class="col d-flex flex-column align-items-center m-3 position-relative justify-conten-center" >
-            <img class="img-fluid rounded w-50 " src="{{dataService.imagen}}" alt="foto perfil">   
-           
+            <img class="img-fluid rounded w-50 perfil" src="{{dataService.imagen}}" alt="foto perfil">   
+            
             <div *ngIf="dataService.edit;then changeButtonEdit "></div>
         </div>   
         <div class="col w-50">        

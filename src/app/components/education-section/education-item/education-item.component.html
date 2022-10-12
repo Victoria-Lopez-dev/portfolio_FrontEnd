@@ -5,12 +5,20 @@
         <h4 class="fontSecondary">{{edHist.place}}</h4>
         <p>{{edHist.description}}</p>            
     </div>
-        <div class="col-2 rounded done d-flex align-items-center justify-content-center">
-            <p class="fontSecondary m-0 p-2">{{edHist.finished}}</p>
-        </div>
- 
-   
-    
+        <div *ngIf="edHist.finished =='Finalizado',then finito;else enCurso"> </div>
+        
+        <ng-template #finito>
+            <div class="col-2 rounded done finito d-flex align-items-center justify-content-center">
+                <p class="fontSecondary m-0 p-2 " >{{edHist.finished}}</p>                    
+            </div>
+        </ng-template>
+
+        <ng-template #enCurso>
+            <div class="col-2 rounded done d-flex align-items-center justify-content-center">
+                <p class="fontSecondary m-0 p-2 " >{{edHist.finished}}</p>                
+            </div>
+        </ng-template>
+        
 
     <div *ngIf="dataService.edit;then changeButton "></div>
 

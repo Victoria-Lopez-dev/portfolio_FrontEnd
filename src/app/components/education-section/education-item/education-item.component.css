@@ -11,13 +11,20 @@ h3{
     border:2px solid #324587;
     box-shadow: 2px 3px 10px #154454;
     text-align: center;
+   
 }
 
 .period{
     background-color: rgba(73, 138, 199,0.5);
+    box-shadow:inset 2px 3px 10px #154454;
     padding: 10px;
     text-align: center;
 }
 .fontSecondary{
     font-size: 20px;
+}
+.finito{
+    background-color: var(--colorMiddleBlue);
+    color: var(--colorWhite);
+    box-shadow: inset -2px -3px 10px #154454;
 }
