@@ -151,15 +151,22 @@ export class ServicioNuevoService {
 
 edItem=[
   {
-    id:'0.ed',
+    id:'1.ed',
+    title:"React.JS ,Guía desde 0",
+    place:"Udemy",
+    description:"Curso de React Js para poder incorporar un concepto mas completo y profundizar sobre el uso de esta libreria",
+    period:"05/2022",
+    finished:"En Curso"    
+  },{
+    id:'2.ed',
     title:"Programador Web Full-Stack",
     place:"ARGENTINA PROGRAMA #Yo Programo",
     description:"Segunda etapa del programa creado por el Ministerio de Desarrollo Productivo para convertise en Desarrollador Web Full -Stack",
     period:"05/2020",
-    finished:"En Curso"    
+    finished:"Finalizado"    
   },
   {
-    id:'1.ed',
+    id:'3.ed',
     title:"Programador Web",
     place:"ARGENTINA PROGRAMA #SeProgramar",
     description:"Primera etapa del programa creado por el Ministerio de Desarrollo Productivo para convertise en Desarrollador Web Full -Stack",
@@ -167,7 +174,7 @@ edItem=[
     finished:"Finalizado"    
   },
   {
-    id:'2.ed',
+    id:'4.ed',
     title:"Desarrollo Web Full-Stack",
     place:"Academia Acamica",
     description:"Curso intensivo para ser desarrollador Web Full-Stack",
@@ -175,7 +182,7 @@ edItem=[
     finished:"Finalizado"    
   },
   {
-    id:'3.ed',
+    id:'5.ed',
     title:"React For Beginners",
     place:"Wes Bos Courses",
     description:"Curso online sobre los conceptos basicos de React, un primer acercamiento a la herramienta y como aplicarlo.",
@@ -183,7 +190,7 @@ edItem=[
     finished:"Finalizado"    
   },
   {
-    id:'4.ed',
+    id:'6.ed',
     title:"Scrum Master",
     place:"Campus Virtual Banco Galicia",
     description:"Estudio sobre las metodologias agiles y el trabajo que realiza un Scrum Master",
@@ -191,7 +198,7 @@ edItem=[
     finished:"Finalizado"    
   },
   {
-    id:'5.ed',
+    id:'7.ed',
     title:"Habla Francesa",
     place:"Alianza Francesa Bella Vista ",
     description:"Estudios del idioma Frances",
@@ -199,7 +206,7 @@ edItem=[
     finished:"En Curso"    
   },
   {
-    id:'6.ed',
+    id:'8.ed',
     title:"Mandatario Registral de automotores y Creditos Prendarios",
     place:"Association de Gestores Administrativos de C.A.B.A. (A.G.A)",
     description:"Curso sobre creditos prendarios y registro de automotores",
@@ -207,7 +214,7 @@ edItem=[
     finished:"Finalizado"
   },
   {
-    id:'7.ed',
+    id:'9.ed',
     title:"Bachiller en Ciencias Naturales",
     place:"Instituto Ntra. Sra. Del Loreto",
     description:"Estudios secundarios con orientacion en Ciencias Naturales",
