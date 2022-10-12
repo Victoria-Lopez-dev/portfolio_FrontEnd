@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
 export class ServicioNuevoService {
-  constructor() { }
+  constructor(private http: HttpClient) { }
   edit:boolean =false;
   openModal:boolean=false;
   EditButton:boolean =false;
-
+  
 
   itemSelectChange(inf:string){
     if(inf.split('.').pop() == 'e'){
@@ -44,6 +44,14 @@ export class ServicioNuevoService {
     this.EditButton=true
   }
 
+
+  
+    getUsers() {
+      this.http.get("https://localhost:3000").subscribe(data => {
+        console.log(data);
+      });
+    }
+  
   areaEdit=[''];
   
   info:string="Soy Desarrolladora Web Full Stack ,amante de los animales y de la musica. En la actualidad me encuentro siendo parte del cuerpo docente de la facultad UTN asistiendo cursos de desarrollo web. Me concidero una persona dedicada y curiosa, con el objetivo constante de aprender, adquirir nuevos conocimientos y ser parte de experiencias dedicadas al desarrollo web.";

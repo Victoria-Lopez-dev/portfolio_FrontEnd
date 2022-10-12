@@ -19,7 +19,7 @@ import { BotonEditionComponent } from './components/boton-edition/boton-edition.
 import { BotonOnliEditComponent } from './components/boton-onli-edit/boton-onli-edit.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { EditFormComponent } from './components/edit-form/edit-form.component';
-
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -45,7 +45,8 @@ import { EditFormComponent } from './components/edit-form/edit-form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

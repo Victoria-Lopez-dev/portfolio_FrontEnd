@@ -28,7 +28,7 @@ export class LogInComponent implements OnInit {
         this.dataService.edit = true  
     }
     
-
+    this.dataService.getUsers();
     this.dataService.openModal=false
   }
 
