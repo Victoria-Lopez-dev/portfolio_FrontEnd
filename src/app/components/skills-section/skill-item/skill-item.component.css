@@ -21,7 +21,10 @@ p{
     overflow: hidden;  
     position: relative;
    border-color: #324587;
-   animation: mover 2s 5s;
+   cursor: pointer;
+}
+.skill:hover{
+    animation: mover 2s ;
 }
 
 @keyframes mover {
