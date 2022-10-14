@@ -11,9 +11,7 @@
 body{
     background-image: var(--colorBackground);
 }
-body:scrolled-content{
-    background-image: linear-gradient(red 0% red 100%);
-}
+
 .blue-shadow{
     box-shadow: 2px 3px #154454;
 }
