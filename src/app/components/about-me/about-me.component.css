@@ -8,3 +8,28 @@
 .cont-perfil{
     position: relative;
 }
+.perfil{
+  
+    padding: calc(8px + 14px);
+    background-image:
+      conic-gradient(from  90deg at top    8px left  8px,#0000 25%,var(--colorDarkBlue) 0),
+      conic-gradient(from -90deg at bottom 8px right 8px,#0000 25%,var(--colorDarkBlue) 0);
+    background-position:
+      var(--_p,0%) var(--_p,0%),
+      calc(100% - var(--_p,0%)) calc(100% - var(--_p,0%));
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 
+      background-position .3s var(--_i,.3s), 
+      background-size .3s calc(.3s - var(--_i,.3s));
+
+}
+.perfil:hover{
+    background-size: calc(100% - 14px) calc(100% - 14px);
+    --_p: calc(14px/2);
+    --_i: 0s;
+  }
+
+  
+ 
